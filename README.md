@@ -8,7 +8,7 @@ https://youtu.be/ux5gSxy1w-s - Short tutorial in German language (20.01.2022)
     $ git clone https://github.com/ogerly/xp-collector.git
     $ cd xp-collector
 
-Bitte führe im frontend und im backend folgende befehle aus. 
+Please execute the following commands in the frontend and backend.
 
   ### frontend
     $ cd frontend
@@ -58,7 +58,7 @@ Data input
 Linking data
 
 
-![typen](https://user-images.githubusercontent.com/1324583/139631987-1b5cd41d-d2a5-486b-b345-8101612807d9.png)
+![types](https://user-images.githubusercontent.com/1324583/139631987-1b5cd41d-d2a5-486b-b345-8101612807d9.png)
 
 
 
@@ -68,7 +68,7 @@ Complex structures can be created by simply linking individual data records. Sim
 
 
 
-![arten](https://user-images.githubusercontent.com/1324583/139631997-e948de7a-e8e1-4b92-b315-62f610dba775.png)
+![species](https://user-images.githubusercontent.com/1324583/139631997-e948de7a-e8e1-4b92-b315-62f610dba775.png)
 
 
 
