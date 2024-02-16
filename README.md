@@ -20,7 +20,7 @@ Please execute the following commands in the frontend and backend.
       - Network: http://192.168.0.248:8080/
  
 
-Öffne eine zweite Konsole und 
+Open a second console and
 
   ### backend
     $ cd backend
