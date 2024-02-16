@@ -1,35 +1,41 @@
 <template>
-  <div>
-    Malicious Subgraph Discovery
-
-    <div>
-      <b-button size="sm" @click="reloadEdges">Connections</b-button>
-      <b-button size="sm" @click="showAllNodes">Nodes</b-button>
-    </div>
-    <div>
-      <b-input-group prepend="Filter Query" class="mt-4">
-        <b-form-input
-          id="queryInput"
-          type="text"
-          v-model="query"
-        ></b-form-input>
-        <b-input-group-append>
-          <b-button id="loadQueryButton" variant="info" @click="loadQuery"
-            ><b-icon icon="caret-right-fill"></b-icon
-          ></b-button>
-        </b-input-group-append>
-      </b-input-group>
-    </div>
-            <b-container id="main-container" >    <!-- <b-container id="main-container" fluid></b-container>  -->
-              <section id="graph-renderer">&nbsp;</section>
-            </b-container>
-    <hr />
-    <div class="mb-2">
-      <b-button variant="danger" @click="toDeleteNeo4j"
-        >Delete DB</b-button
-      >
-    </div>
-  </div>
+  <b-container class="bv-example-row">
+    <b-row>
+      <b-col>
+        <div>
+          Malicious Subgraph Discovery
+          <div>
+            <b-button size="sm" @click="reloadEdges">Connections</b-button>
+            <b-button size="sm" @click="showAllNodes">Nodes</b-button>
+          </div>
+          <div>
+            <b-input-group prepend="Filter Query" class="mt-4">
+              <b-form-input
+                id="queryInput"
+                type="text"
+                v-model="query"
+              ></b-form-input>
+              <b-input-group-append>
+                <b-button id="loadQueryButton" variant="info" @click="loadQuery"
+                  ><b-icon icon="caret-right-fill"></b-icon
+                ></b-button>
+              </b-input-group-append>
+            </b-input-group>
+          </div>
+                  <b-container id="main-container" >    <!-- <b-container id="main-container" fluid></b-container>  -->
+                    <section id="graph-renderer">&nbsp;</section>
+                  </b-container>
+          <hr />
+          <div class="mb-2">
+            <b-button variant="danger" @click="toDeleteNeo4j"
+              >Delete DB</b-button
+            >
+          </div>
+        </div>
+      </b-col>
+      <b-col>Aquì Deben ir los Paneles Con info :b</b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <script>
