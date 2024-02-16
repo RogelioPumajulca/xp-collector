@@ -7,7 +7,7 @@
       <b-button size="sm" @click="showAllNodes">Nodes</b-button>
     </div>
     <div>
-      <b-input-group prepend="Fileter Query" class="mt-3">
+      <b-input-group prepend="Filter Query" class="mt-4">
         <b-form-input
           id="queryInput"
           type="text"
@@ -20,9 +20,9 @@
         </b-input-group-append>
       </b-input-group>
     </div>
-    <b-container id="main-container" fluid>
-      <section id="graph-renderer">&nbsp;</section>
-    </b-container>
+            <b-container id="main-container" >    <!-- <b-container id="main-container" fluid></b-container>  -->
+              <section id="graph-renderer">&nbsp;</section>
+            </b-container>
     <hr />
     <div class="mb-2">
       <b-button variant="danger" @click="toDeleteNeo4j"
