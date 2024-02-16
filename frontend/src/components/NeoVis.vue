@@ -3,8 +3,8 @@
     neovis
 
     <div>
-      <b-button size="sm" @click="reloadEdges">Verbindungen anzeigen</b-button>
-      <b-button size="sm" @click="showAllNodes">Alle Knoten anzeigen</b-button>
+      <b-button size="sm" @click="reloadEdges">Connections</b-button>
+      <b-button size="sm" @click="showAllNodes">Nodes</b-button>
     </div>
     <div>
       <b-input-group prepend="query" class="mt-3">
@@ -26,7 +26,7 @@
     <hr />
     <div class="mb-2">
       <b-button variant="danger" @click="toDeleteNeo4j"
-        >Lösche alles in der Datenbank</b-button
+        >Delete DB</b-button
       >
     </div>
   </div>

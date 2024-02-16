@@ -4,7 +4,7 @@
     <b-container fluid class="w-100 bv-example-row border mb-4 mt-4 p-2">
       <b-row>
         <b-col class="border3">
-          <div class="">Kanten / Verbindung</div>
+          <div class="">Edge / connection</div>
           <div v-show="editBox">
             {{ query }}
             <div @click="editBox = false">schließen</div>

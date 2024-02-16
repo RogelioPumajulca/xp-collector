@@ -2,7 +2,7 @@
   <div>
     ConnectNodes
     <b-container class="border mt-4 mb-4 p-4">
-      Bitte Wähle zwei Hauptknoten aus um die Unterknoten zu Verbinden.
+      Select two main nodes to connect the subnode
       <b-row>
         <b-col>
           <label>Label 1</label>
@@ -37,7 +37,7 @@
         <b-row>
           <b-col v-if="selectedLabel1">
             <h3>{{ selectedLabel1 }}</h3>
-            <label>Knoten 1 </label>
+            <label>Node 1 </label>
             <br />
             <b-form-select
               v-model="selectedSubNode1"
@@ -51,7 +51,7 @@
           </b-col>
           <b-col v-if="selectedLabel1 && selectedLabel2">
             <h3>{{ selectedEdges }}</h3>
-            <label>Kante / Verbindung</label>
+            <label>Edge/Connection</label>
             <br />
             <b-form-select
               v-model="selectedEdges"
@@ -66,7 +66,7 @@
           </b-col>
           <b-col v-if="selectedLabel2">
             <h3>{{ selectedLabel2 }}</h3>
-            <label>Knoten 2</label>
+            <label>Node 2</label>
             <br />
             <b-form-select
               v-model="selectedSubNode2"
@@ -107,7 +107,7 @@
               block
               variant="primary"
               @click="saveNodeRelations"
-              >Verbindung speichern</b-button
+              >Save Connection</b-button
             >
           </b-col>
         </b-row>

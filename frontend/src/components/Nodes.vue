@@ -1,7 +1,7 @@
 <template>
   <div class="component-node">
     <hr />
-    Unterknoten für
+    Subnodes
     <h2 id="col-label">{{ nodeContentText }}</h2>
     <div>
       <b-input-group prepend="name">

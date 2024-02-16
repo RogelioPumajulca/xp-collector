@@ -3,8 +3,8 @@ import neo4j from "neo4j-driver-lite";
 
 // Create Driver Local
 const driver = new neo4j.driver(
-  "bolt://localhost:11005",
-  neo4j.auth.basic("neo4j", "test")
+  "bolt://localhost:7687",
+  neo4j.auth.basic("neo4j", "S1st3m@s")
 );
 
 // Create Driver Local XP whoknows

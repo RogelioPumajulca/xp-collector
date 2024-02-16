@@ -12,9 +12,9 @@ async function graphConfig () {
   return {
     containerId: 'graph-renderer',
     neo4j: {
-      serverUrl: process.env.NEO4J_URI || 'bolt://localhost:11005',
+      serverUrl: process.env.NEO4J_URI || 'bolt://localhost:7687',
       serverUser: process.env.NEO4J_USER || 'neo4j',
-      serverPassword: process.env.NEO4J_PASSWORD || 'test'
+      serverPassword: process.env.NEO4J_PASSWORD || 'S1st3m@s'
     },
     visConfig: {
       clickToUse: true,

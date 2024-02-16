@@ -2,7 +2,7 @@
   <div>
     <b-navbar toggleable="lg" type="dark" variant="info">
       <b-navbar-brand href="#" v-b-toggle="['sidebar-1']"
-        >NavBar</b-navbar-brand
+        >Navegation</b-navbar-brand
       >
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -13,13 +13,13 @@
             href="#"
             v-b-toggle="['collapse-1']"
             @click="setNavbarContent('label_node')"
-            >Label & Knoten</b-nav-item
+            >Label & Node</b-nav-item
           >
           <b-nav-item
             href="#"
             v-b-toggle="['collapse-2']"
             @click="setNavbarContent('edge')"
-            >Kanten</b-nav-item
+            >Edges</b-nav-item
           >
         </b-navbar-nav>
 
