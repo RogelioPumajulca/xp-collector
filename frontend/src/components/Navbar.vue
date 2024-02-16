@@ -2,7 +2,7 @@
   <div>
     <b-navbar toggleable="lg" type="dark" variant="info">
       <b-navbar-brand href="#" v-b-toggle="['sidebar-1']"
-        >Navegation</b-navbar-brand
+        >L-SIEM</b-navbar-brand
       >
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -32,21 +32,21 @@
               placeholder="MATCH (n) RETURN n"
             ></b-form-input>
             <b-button size="sm" class="my-2 my-sm-0" type="submit"
-              >query Neo4j</b-button
+              >Query</b-button
             >
           </b-nav-form>
 
-          <b-nav-item-dropdown text="Lang" right>
+<!--           <b-nav-item-dropdown text="Lang" right>
             <b-dropdown-item href="#">EN</b-dropdown-item>
             <b-dropdown-item href="#">ES</b-dropdown-item>
             <b-dropdown-item href="#">RU</b-dropdown-item>
             <b-dropdown-item href="#">FA</b-dropdown-item>
-          </b-nav-item-dropdown>
+          </b-nav-item-dropdown> -->
 
           <b-nav-item-dropdown right>
             <!-- Using 'button-content' slot -->
             <template #button-content>
-              <em>User</em>
+              <em>Rogelio</em>
             </template>
             <b-dropdown-item href="#">Profile</b-dropdown-item>
             <b-dropdown-item href="#">Sign Out</b-dropdown-item>

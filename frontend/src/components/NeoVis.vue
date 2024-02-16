@@ -1,13 +1,13 @@
 <template>
   <div>
-    neovis
+    Malicious Subgraph Discovery
 
     <div>
       <b-button size="sm" @click="reloadEdges">Connections</b-button>
       <b-button size="sm" @click="showAllNodes">Nodes</b-button>
     </div>
     <div>
-      <b-input-group prepend="query" class="mt-3">
+      <b-input-group prepend="Fileter Query" class="mt-3">
         <b-form-input
           id="queryInput"
           type="text"

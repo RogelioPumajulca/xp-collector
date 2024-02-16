@@ -82,7 +82,7 @@ export default {
 
       this.nodeContentAddName = name.replace(/ /i, '_')
       if (this.nodeContentText === '') {
-        alert('lehr ABBRUCH')
+        alert('QuizasCancelar')
         return
       }
       try {
