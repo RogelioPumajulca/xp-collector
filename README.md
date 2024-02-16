@@ -4,7 +4,7 @@ https://youtu.be/ux5gSxy1w-s - Short tutorial in German language (20.01.2022)
 
 # Install
 
-  ### Projekt
+  ### Project
     $ git clone https://github.com/ogerly/xp-collector.git
     $ cd xp-collector
 
