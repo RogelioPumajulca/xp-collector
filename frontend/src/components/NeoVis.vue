@@ -28,12 +28,28 @@
           <hr />
           <div class="mb-2">
             <b-button variant="danger" @click="toDeleteNeo4j"
-              >Delete DB</b-button
-            >
+              >Delete DB</b-button>
           </div>
         </div>
       </b-col>
-      <b-col>Aquì Deben ir los Paneles Con info :b</b-col>
+      <b-col>
+        <b-table responsivetable
+          sticky-header="200px"
+          :items="items2"
+          head-variant="dark"></b-table>
+        <b-table responsivetable
+        sticky-header="200px"
+        :items="items2"
+        head-variant="dark"></b-table>
+        <b-table responsivetable
+        sticky-header="200px"
+        :items="items2"
+        head-variant="dark"></b-table>
+        <b-table responsivetable
+        sticky-header="150px"
+        :items="items2"
+        head-variant="dark"></b-table>
+      </b-col>
     </b-row>
   </b-container>
 </template>
@@ -70,7 +86,21 @@ export default {
       name: '',
       info: '',
       img: '',
-      nameState: null
+      nameState: null,
+      items2: [
+        { heading1: 'table cell 1x1', heading2: 'table cell 2x1', heading3: 'table cell columna 3x1' },
+        { heading1: 'table cell columna 1 fila 2', heading2: 'table cell', heading3: 'table cell' },
+        { heading1: 'table cell columna 1 fila 3', heading2: 'table cell', heading3: 'table cell' },
+        { heading1: 'table cell', heading2: 'table cell', heading3: 'table cell' },
+        { heading1: 'table cell', heading2: 'table cell', heading3: 'table cell' },
+        { heading1: 'table cell', heading2: 'table cell', heading3: 'table cell' },
+        { heading1: 'table cell', heading2: 'table cell', heading3: 'table cell' },
+        { heading1: 'table cell', heading2: 'table cell', heading3: 'table cell' },
+        { heading1: 'table cell', heading2: 'table cell', heading3: 'table cell' },
+        { heading1: 'table cell', heading2: 'table cell', heading3: 'table cell' },
+        { heading1: 'table cell', heading2: 'table cell', heading3: 'table cell' },
+        { heading1: 'table cell', heading2: 'table cell', heading3: 'table cell' }
+      ]
     }
   },
   methods: {

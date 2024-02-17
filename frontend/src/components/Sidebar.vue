@@ -3,16 +3,18 @@
     <b-sidebar
       id="sidebar-1"
       ref="sidebar-1"
-      title="Sidebar"
+      title="LSIEM - Modules"
+      bg-variant="dark"
+      text-variant="light"
       no-header
-      shadow
+      shadow="lg"
       v-model="visible1"
       @change="setVisible"
     >
-      <b-button variant="primary" block v-b-toggle="['sidebar-1']"
-        >Close Sidebar</b-button
+      <b-button variant="secondary" block v-b-toggle="['sidebar-1']"
+        >Modules</b-button
       >
-      sibebar.vue
+      Alerts
 
       <hr />
       labels {{ labels }}
