@@ -2,11 +2,19 @@
   <b-container class="bv-example-row">
     <b-row>
       <b-col>
-        <div>
-          Malicious Subgraph Discovery
+        <div class="h5 font-weight-bold">
+          Alert Analizer - Malicious Subgraph Discovery
           <div>
-            <b-button size="sm" @click="reloadEdges">Connections</b-button>
-            <b-button size="sm" @click="showAllNodes">Nodes</b-button>
+            <b-row>
+              <b-col class="h6 font-weight-bold"> POI
+                <b-button size="sm" class="mr-2">Defult</b-button >
+                <b-button size="sm">Custom</b-button>
+              </b-col>
+              <b-col>
+                <b-button size="sm" @click="reloadEdges" class="mr-2">Connections</b-button>
+                <b-button size="sm" @click="showAllNodes" >Nodes</b-button>
+              </b-col>
+            </b-row>
           </div>
           <div>
             <b-input-group prepend="Filter Query" class="mt-4">
@@ -33,21 +41,25 @@
         </div>
       </b-col>
       <b-col>
+        <div class="text-white"> . </div>
+        <div class="text-white"> . </div>
+        <div class="text-white"> . </div>
+        <div class="h5 font-weight-bold">Alert Background Information</div>
         <b-table responsivetable
           sticky-header="200px"
           :items="items2"
           head-variant="dark"></b-table>
         <b-table responsivetable
         sticky-header="200px"
-        :items="items2"
+        :items="items3"
         head-variant="dark"></b-table>
         <b-table responsivetable
         sticky-header="200px"
-        :items="items2"
+        :items="items4"
         head-variant="dark"></b-table>
         <b-table responsivetable
         sticky-header="150px"
-        :items="items2"
+        :items="items5"
         head-variant="dark"></b-table>
       </b-col>
     </b-row>
@@ -88,18 +100,30 @@ export default {
       img: '',
       nameState: null,
       items2: [
-        { heading1: 'table cell 1x1', heading2: 'table cell 2x1', heading3: 'table cell columna 3x1' },
-        { heading1: 'table cell columna 1 fila 2', heading2: 'table cell', heading3: 'table cell' },
-        { heading1: 'table cell columna 1 fila 3', heading2: 'table cell', heading3: 'table cell' },
-        { heading1: 'table cell', heading2: 'table cell', heading3: 'table cell' },
-        { heading1: 'table cell', heading2: 'table cell', heading3: 'table cell' },
-        { heading1: 'table cell', heading2: 'table cell', heading3: 'table cell' },
-        { heading1: 'table cell', heading2: 'table cell', heading3: 'table cell' },
-        { heading1: 'table cell', heading2: 'table cell', heading3: 'table cell' },
-        { heading1: 'table cell', heading2: 'table cell', heading3: 'table cell' },
-        { heading1: 'table cell', heading2: 'table cell', heading3: 'table cell' },
-        { heading1: 'table cell', heading2: 'table cell', heading3: 'table cell' },
-        { heading1: 'table cell', heading2: 'table cell', heading3: 'table cell' }
+        { ID: '001', Time: '2023-06-17 T18:53:02', Alert__Detail: 'Setuid / setgit bit set via chmod' },
+        { ID: '002', Time: '2023-05-14 T19:23:02', Alert__Detail: 'Setuid / setgit bit set via chmod' },
+        { ID: '003', Time: 'table cell', Alert__Detail: 'table cell' },
+        { ID: '004', Time: 'table cell', Alert__Detail: 'table cell' },
+        { ID: '005', Time: 'table cell', Alert__Detail: 'table cell' },
+        { ID: '006', Time: 'table cell', Alert__Detail: 'table cell' },
+        { ID: '007', Time: 'table cell', Alert__Detail: 'table cell' },
+        { ID: '008', Time: 'table cell', Alert__Detail: 'table cell' },
+        { ID: '009', Time: 'table cell', Alert__Detail: 'table cell' },
+        { ID: '010', Time: 'table cell', Alert__Detail: 'table cell' },
+        { ID: '011', Time: 'table cell', Alert__Detail: 'table cell' },
+        { ID: '012', Time: 'table cell', Alert__Detail: 'table cell' }
+      ],
+      items3: [
+        { Rule_Conditions: 'evt.type in (chmod, …)' },
+        { Rule_Conditions: 'evt.arg.mode contains S_ISUID or S_ISGID' }
+      ],
+      items4: [
+        { Related_Sources: 'CVE-2022-0847', _: 'Pipe -> Splice' },
+        { Related_Sources: 'CWE-665', _: 'CAPEC-26' },
+        { Related_Sources: 'CVE-2023-032233', _: 'Socket-> Bind -> Sendmsg -> Recvmsg' }
+      ],
+      items5: [
+        { Other: ' ' }
       ]
     }
   },
